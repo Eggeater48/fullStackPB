@@ -2,13 +2,18 @@
 # @name GetAll
 GET http://localhost:3000/api/persons
 
+### GetCertain
+# @name GetCertain
+GET http://localhost:3000/api/persons/66f642d3688148d995860bb9
+
+
 ### Info
 # @name Info
 GET http://localhost:3000/info
 
 ### DeleteCertain
 # @name DeleteCertain
-DELETE http://localhost:3000/api/persons/66fa54c9415c156bbe249d3d
+DELETE http://localhost:3000/api/persons/66f3ee3373ba155db918ac8a
 
 ### CreateNew
 # @name CreateNew
@@ -19,3 +24,14 @@ Content-Type: application/json
   "name" : "Ada Lovelace",
   "number": "3"
 }
+
+### ChangeExisting
+# @name ChangeExisting
+PUT http://localhost:3000/api/persons/66fa82e8d1a72776517bdd29
+Content-Type: application/json
+
+{
+  "name" : "greg",
+  "number" : "321"
+}
+
