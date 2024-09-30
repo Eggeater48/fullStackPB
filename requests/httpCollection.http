@@ -1,0 +1,21 @@
+### GetAll
+# @name GetAll
+GET http://localhost:3000/api/persons
+
+### Info
+# @name Info
+GET http://localhost:3000/info
+
+### DeleteCertain
+# @name DeleteCertain
+DELETE http://localhost:3000/api/persons/66fa54c9415c156bbe249d3d
+
+### CreateNew
+# @name CreateNew
+POST http://localhost:3000/api/persons
+Content-Type: application/json
+
+{
+  "name" : "Ada Lovelace",
+  "number": "3"
+}
